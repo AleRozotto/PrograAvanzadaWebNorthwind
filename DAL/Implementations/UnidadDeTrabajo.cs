@@ -10,7 +10,17 @@ namespace DAL.Implementations
 {
     public class UnidadDeTrabajo : IUnidadDeTrabajo
     {
+
+        public ICategoryDAL _categoryDAL { get;}
+
         private readonly NorthwindContext _context;
+
+        public UnidadDeTrabajo(NorthwindContext context,
+                                ICategoryDAL categoryDAL)
+        {
+            _context = context;
+            _categoryDAL = categoryDAL;
+        }
 
         public bool Complete()
         {
