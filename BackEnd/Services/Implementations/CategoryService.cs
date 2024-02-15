@@ -44,7 +44,9 @@ namespace BackEnd.Services.Implementations
 
         public bool DeleteCategory(CategoryModel category)
         {
-            throw new NotImplementedException();
+            Category entity = Convertir(category);
+            _unidadDeTrabajo._categoryDAL.Remove(entity);
+            return _unidadDeTrabajo.Complete();
         }
 
         public CategoryModel GetById(int id)
@@ -69,7 +71,9 @@ namespace BackEnd.Services.Implementations
 
         public bool UpdateCategory(CategoryModel category)
         {
-            throw new NotImplementedException();
+            Category entity = Convertir(category);
+            _unidadDeTrabajo._categoryDAL.Update(entity);
+            return _unidadDeTrabajo.Complete();
         }
     }
 }
