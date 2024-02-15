@@ -53,9 +53,9 @@ namespace BackEnd.Controllers
 
             if (result)
             {
-                return "Categoria Agregada Correctamente.";
+                return "Categoria Editada Correctamente.";
             }
-            return "Error al agregar a la entidad.";
+            return "Error al editar a la entidad.";
         }
 
         // DELETE api/<CategoryController>/5
@@ -67,9 +67,9 @@ namespace BackEnd.Controllers
 
             if (result)
             {
-                return "Categoria Agregada Correctamente.";
+                return "Categoria Eliminada Correctamente.";
             }
-            return "Error al agregar a la entidad.";
+            return "Error al eliminar a la entidad.";
         }
     }
 }
