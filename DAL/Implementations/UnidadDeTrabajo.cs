@@ -11,7 +11,7 @@ namespace DAL.Implementations
     public class UnidadDeTrabajo : IUnidadDeTrabajo
     {
 
-        public ISupplierDAL _supplierDAL { get; }
+        public ISupplierDAL _SupplierDAL { get; }
         public ICategoryDAL _categoryDAL { get;}
 
         private readonly NorthwindContext _context;
@@ -22,7 +22,7 @@ namespace DAL.Implementations
         {
             _context = northwindContext;
             _categoryDAL = categoryDAL;
-            _supplierDAL = supplierDAL;
+            _SupplierDAL = supplierDAL;
         }
 
         public bool Complete()
