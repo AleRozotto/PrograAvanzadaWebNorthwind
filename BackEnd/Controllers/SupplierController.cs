@@ -13,9 +13,9 @@ namespace BackEnd.Controllers
     {
 
         ISupplierService SupplierService;
-        public SupplierController(ISupplierService SupplierService)
+        public SupplierController(ISupplierService supplierService)
         {
-            SupplierService = SupplierService;
+            SupplierService = supplierService;
         }
 
         // GET: api/<SupplierController>
